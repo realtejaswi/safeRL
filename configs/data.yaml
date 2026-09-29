@@ -1,0 +1,20 @@
+dataset:
+  name: lerobot/droid_1.0.1
+  mode: stream
+
+  max_episodes: 10000
+  max_samples: 1000000
+
+  successful_only: true
+
+  state_features:
+    - joint_position
+    - joint_velocity
+    - gripper_position
+
+  action_representation: joint_delta
+
+  train_ratio: 0.9
+  val_ratio: 0.1
+
+  shuffle_buffer: 10000

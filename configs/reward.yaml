@@ -1,0 +1,17 @@
+reward:
+  success: 100.0
+  grasp: 10.0
+  progress: 5.0
+
+  collision: 50.0
+  clearance: 5.0
+  energy: 0.01
+  smoothness: 0.01
+
+  time: 0.01
+
+  safe_distance: 0.08
+
+termination:
+  terminate_on_collision: true
+  max_steps: 200

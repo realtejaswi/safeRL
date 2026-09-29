@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "saferl-manipulator"
+version = "0.1.0"
+description = "Risk-Aware Residual Reinforcement Learning for Autonomous Robotic Manipulation Using Large-Scale Robot Demonstrations"
+authors = [
+    {name = "Antigravity", email = "antigravity@google.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "torch",
+    "numpy",
+    "pandas",
+    "scikit-learn",
+    "gymnasium",
+    "mani_skill",
+    "sapien",
+    "stable-baselines3",
+    "datasets",
+    "huggingface_hub",
+    "pyarrow",
+    "opencv-python",
+    "Pillow",
+    "matplotlib",
+    "tensorboard",
+    "PyYAML",
+    "python-dotenv",
+    "tqdm",
+    "joblib",
+    "pytest"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

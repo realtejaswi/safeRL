@@ -1,0 +1,17 @@
+device: auto
+seed: 42
+
+curriculum:
+  enabled: true
+  stages:
+    - obstacle_count: 0
+    - obstacle_count: 1
+    - obstacle_count: 2
+    - obstacle_count: 5
+
+obstacles:
+  enabled: true
+  min_count: 1
+  max_count: 5
+  min_size: 0.03
+  max_size: 0.10

@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+data/raw/*
+data/processed/*
+data/cache/*
+artifacts/bc/*
+artifacts/rl/*
+artifacts/plots/*
+artifacts/results/*
+artifacts/videos/*
+artifacts/logs/*
+!data/raw/.gitkeep
+!artifacts/bc/.gitkeep
